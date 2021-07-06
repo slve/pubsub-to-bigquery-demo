@@ -1,0 +1,34 @@
+[
+    {
+        "name": "name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "date",
+        "type": "DATETIME",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "attributes",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "key",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "tags",
+        "type": "STRING",
+        "mode": "REPEATED"
+    }
+]
